@@ -1,0 +1,41 @@
+#------------------------------------------------------------------------------#
+#                   OFFICIAL DEBIAN REPOS                    
+#------------------------------------------------------------------------------#
+
+###### Debian Main Repos
+deb http://deb.debian.org/debian/ stable main contrib non-free
+deb-src http://deb.debian.org/debian/ stable main contrib non-free
+
+deb http://deb.debian.org/debian/ stable-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-updates main contrib non-free
+
+deb http://deb.debian.org/debian-security stable/updates main
+deb-src http://deb.debian.org/debian-security stable/updates main
+
+deb http://ftp.debian.org/debian buster-backports main
+deb-src http://ftp.debian.org/debian buster-backports main
+
+#------------------------------------------------------------------------------#
+#                      UNOFFICIAL  REPOS                       
+#------------------------------------------------------------------------------#
+
+###### 3rd Party Binary Repos
+###Docker CE
+deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+
+###nginx
+deb [arch=amd64,i386] http://nginx.org/packages/debian/ buster nginx
+deb-src [arch=amd64,i386] http://nginx.org/packages/debian/ stretch nginx
+
+###NodeJs
+deb https://deb.nodesource.com/node_14.x buster main
+deb-src https://deb.nodesource.com/node_14.x buster main
+
+###PHP
+deb https://packages.sury.org/php/ buster main
+
+###Wine
+deb [arch=i386] https://dl.winehq.org/wine-builds/debian/ buster main
+
+###yarn
+deb https://dl.yarnpkg.com/debian/ stable main
