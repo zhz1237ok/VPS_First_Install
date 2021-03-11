@@ -9,6 +9,8 @@ sudo tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
 sudo rm go1.16.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin'>>~/.bashrc
 export PATH=$PATH:/usr/local/go/bin
+echo "安装 git"
+sudo apt install -y git
 
 git clone https://github.com/XTLS/Xray-core.git
 cd Xray-core/ || exit 2
