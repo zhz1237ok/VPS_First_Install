@@ -11,14 +11,9 @@ echo 'export PATH=$PATH:/usr/local/go/bin'>>~/.bashrc
 export PATH=$PATH:/usr/local/go/bin
 echo "安装 git 7zip"
 sudo apt install -y git
-mkdir 7zip
-cd 7zip/
-wget https://7-zip.org/a/7z2101-linux-x64.tar.xz
-xz -d 7z2101-linux-x64.tar.xz
-tar -xvf 7z2101-linux-x64.tar
-sudo mv 7zz /usr/bin/
-cd ..
-sudo rm -rf 7zip/
+mkdir 7zip ; cd 7zip/
+wget https://7-zip.org/a/7z2101-linux-x64.tar.xz ; 
+sudo xz -d 7z2101-linux-x64.tar.xz ; sudo tar -xvf 7z2101-linux-x64.tar ; sudo mv 7zz /usr/bin/ ; cd .. ; sudo rm -rf 7zip/
 
 cd ${cur_dir}
 git clone https://github.com/SekiBetu/v2ray-core-4.27.5.git
