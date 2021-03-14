@@ -2,11 +2,11 @@
 
 cur_dir="$(pwd)"
 
-echo "删除当前go版本，安装 go 1.16 版本"
+echo "删除当前go版本，安装 go 1.16.2 版本"
 sudo rm -rf /usr/local/go
-wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
-sudo rm go1.16.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.16.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz
+sudo rm go1.16.2.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin'>>~/.bashrc
 export PATH=$PATH:/usr/local/go/bin
 echo "安装 git"
