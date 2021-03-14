@@ -3,7 +3,7 @@
 cur_dir="$(pwd)"
 
 echo "删除当前go版本，安装 go 1.16.2 版本"
-sudo rm -rf /usr/local/go
+sudo rm -rf $(go env GOROOT)
 wget https://dl.google.com/go/go1.16.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz
 sudo rm go1.16.2.linux-amd64.tar.gz
